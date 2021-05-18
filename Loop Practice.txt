@@ -1,0 +1,317 @@
+package com.kh.chap02.practice;
+
+import java.util.Scanner;
+
+public class LoopPractice {
+
+	public void practice1() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(1이상의 숫자를 입력하세요  );
+		int num = sc.nextInt();
+		
+		if(num = 1) {
+			for(int i = 1; i = num; i++) {
+				System.out.print(i +  );
+		} 
+		} else 
+			System.out.println(잘못 입력하셨습니다.);
+	}
+
+	public void practice2() {
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.print(1이상의 숫자를 입력하세요  );
+			int num = sc.nextInt();
+			
+			if(num = 1) {
+				for(int i = 1; i = num; i++) {
+					System.out.print(i +  );
+				}
+				System.out.println();
+				return;
+				
+			} else {
+				System.out.println(잘못 입력하셨습니다. 다시 입력해주세요.);
+				} 
+			
+			}
+			
+		}
+
+	public void practice3() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(1이상의 숫자를 입력하세요  );
+		int num =sc.nextInt();
+		
+		if(num = 1) {
+			for(int i = num; i = 1; i--) {
+				System.out.print(i +  );
+			} 
+		} else 
+			System.out.println(잘못 입력하셨습니다.);
+	}
+	
+	public void practice4() {
+		Scanner sc = new Scanner(System.in);
+		for(;;) {
+			System.out.print(1이상의 숫자를 입력하세요  );
+			int num = sc.nextInt();
+			
+			if (num = 1) {
+				for(int i = num; i = 1; i--) {
+					System.out.print(i +  );
+				} break;
+				
+			} else {
+				System.out.println(잘못 입력하셨습니다. 다시 입력해주세요.);
+				continue;
+			}
+			
+		}
+		
+	}
+
+	public void practice5() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(정수를 하나 입력하세요  );
+		int num = sc.nextInt();
+		int sum = 0;
+		
+		for(int i = 1; i = num; i++) {
+			sum += i;
+			
+			if (i != num) {
+				System.out.print(i +  + );
+			} else {
+				System.out.print(i +  = );
+			}
+			System.out.print(i);
+				if(i == num) {
+					System.out.print( = );
+				} else {
+					System.out.print( + );
+				}
+				
+		}
+		System.out.print(sum);
+	
+	}
+		
+	public void practice6() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(첫 번째 숫자  );
+		int n1 = sc.nextInt();
+		
+		System.out.print(두 번째 숫자  );
+		int n2 = sc.nextInt();
+		
+		int min = 0;
+		int max = 0;
+		
+		if(n1 = 1 && n2 = 1) {
+			if(n1 = n2) {
+				max = n1;
+				min = n2;	
+			} else  {
+				max = n2;
+				min = n1;
+			}		
+			
+			for(int i = min; min = max; min++) {
+						System.out.print(min +  );
+			}
+				
+		} else {
+			System.out.println(1이상의 숫자만을 입력해주세요);
+		}
+		
+	}
+	
+	public void practice7() {
+		Scanner sc = new Scanner(System.in);
+		
+		for(;;) {
+			System.out.print(첫 번째 숫자  );
+			int n1 = sc.nextInt();
+			
+			System.out.print(두 번째 숫자  );
+			int n2 = sc.nextInt();
+			
+			int min = 0;
+			int max = 0;
+			
+			if(n1 = 1 && n2 = 1) {
+				if(n1 = n2) {
+					max = n1;
+					min = n2;	
+				} else  {
+					max = n2;
+					min = n1;
+				}		
+				
+				for(int i = min; min = max; min++) {
+							System.out.print(min +  );
+				}
+				break;	
+			} else {
+				System.out.println(1이상의 숫자만을 입력해주세요);
+				continue;
+			}
+		}
+	
+		
+	}
+
+	
+	
+	public void practice8() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(숫자  );
+		int dan = sc.nextInt();
+		
+		System.out.println(====  + dan + 단 ====);
+		
+		for(int su = 1; su = 9; su++) {
+					System.out.println(dan +    + su +  =  + dan  su);
+			
+		}
+		
+	}
+
+	public void practice9() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(숫자  );
+		int dan = sc.nextInt();
+	
+		
+		if(dan = 2 && dan = 9) {
+			System.out.println(====  + dan + 단 ====);
+			
+			for(int su = 1; su = 9; su++) {
+				System.out.println(dan +    + su +  =  + dan  su);
+			}
+		} else {
+			System.out.println(2~9 사이의 숫자만 입력해주세요.);
+		}
+		
+		
+	}
+
+	public void practice10() {
+		Scanner sc = new Scanner(System.in);
+		
+		for(;;) {
+		System.out.print(숫자  );
+		int dan = sc.nextInt();
+	
+		if(dan = 2 && dan = 9) {
+			System.out.println(====  + dan + 단 ====);
+			
+			for(int su = 1; su = 9; su++) {
+				System.out.println(dan +    + su +  =  + dan  su);
+			}	break;
+		} else {
+			System.out.println(2~9 사이의 숫자만 입력해주세요.);
+			continue;
+		}
+			
+		}	
+		
+	}
+
+	public void practice11() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(시작 숫자  );
+		int st = sc.nextInt();
+		
+		System.out.print(공차  );
+		int pl = sc.nextInt();
+		
+		
+		for(int mul = 0; mul = 9; mul++) {
+			System.out.print(st + (pl  mul) +  );
+	
+		}
+		
+	}
+	
+	public void practice12() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(정수 입력  );
+		int num = sc.nextInt();
+		
+		for(int i = 1; i = num; i++) {
+			for(int j = 1; j = i; j++) {
+				System.out.print();
+			} System.out.println();
+			
+		}
+}
+	
+	public void practice13() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(정수 입력  );
+		int num = sc.nextInt();
+		
+		for(int i = 1; i = num; i++) {
+			for(int j = num; j = i; j--) {
+				System.out.print();
+			} System.out.println();
+			
+		}
+		
+	}
+
+	public void practice14() {
+		Scanner sc = new Scanner(System.in);
+	for(;;) {
+		System.out.print(연산자  (+, -, , , %)  );
+		String str = sc.nextLine();
+				
+		if(!str.equals(exit)) {
+			System.out.print(정수1  );
+			int n1 = sc.nextInt();
+			
+			System.out.print(정수2  );
+			int n2 = sc.nextInt();
+			
+			if(!str.equals(+) && !str.equals(-) && !str.equals() && !str.equals() && !str.equals(%)) {
+				System.out.println(없는 연산자입니다. 다시 입력해주세요.);
+				sc.nextLine();
+				continue;
+				
+			} else if(str.equals() && n2 == 0) {
+				System.out.println(0으로 나눌 수 없습니다. 다시 입력해주세요.);
+				sc.nextLine();
+				continue;
+			} else {
+				switch(str) {
+				case +
+					System.out.println(n1 +  +  + n2 +  =  + (n1 + n2));
+					break;
+					
+				case -
+					System.out.println(n1 +  -  + n2 +  =  + (n1 - n2));
+					break;
+				case 
+					System.out.println(n1 +    + n2 +  =  + (n1  n2));
+					break;
+				case 
+					System.out.println(n1 +    + n2 +  =  + (n1  n2));
+					break;
+				case %
+					System.out.println(n1 +  %  + n2 +  =  + (n1 % n2));
+					break;
+				}	
+				break;
+			}
+			
+		} else {
+			System.out.println(프로그램을 종료합니다.);
+			break;
+		}
+	} 
+}
+	}
+
