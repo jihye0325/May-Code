@@ -1,0 +1,26 @@
+package com.kh.chap02_encapsulation.run;
+
+import com.kh.chap02_encapsulation.model.vo.Person;
+
+public class Run_Person {
+
+	public static void main(String[] args) {
+		Person per = new Person();
+		
+		per.setPNo("123456-1234567");
+		per.setName("김철수");
+		per.setGender('M');
+		per.setAge(20);
+		
+		
+		System.out.println("주민등록번호 : " + per.getPNo());
+		System.out.println("이름 : " + per.getName());
+		System.out.println("성별 : " + per.getGender());
+		System.out.println("나이 : " + per.getAge());
+		
+		per.setAge(30);
+	
+		System.out.println(per.information());
+	}
+
+}

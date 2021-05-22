@@ -1,0 +1,49 @@
+package com.kh.chap02_encapsulation.model.vo;
+
+public class Person {
+
+	private String pNo;
+	private String name;
+	private char gender;
+	private int age;
+	
+
+	public void setPNo(String pNo) {
+		this.pNo = pNo;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+		
+	public String getPNo() {
+		return pNo;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public char getGender() {
+		return gender;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+		
+	public String information() {
+		return "주민등록번호 : " + pNo + ", 이름 : " + name + ", 성별 : " + gender 
+				+ ", 나이 : " + age;
+	}
+	
+}
