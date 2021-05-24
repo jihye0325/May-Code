@@ -1,0 +1,16 @@
+package com.kh.practice1.run;
+
+import com.kh.practice1.model.vo.Product;
+
+public class Run {
+
+	public static void main(String[] args) {
+		Product pd = new Product();
+		pd.setpName("pants");
+		pd.setPrice(10000);
+		pd.setBrand("nike");
+
+		System.out.println(pd.information());
+	}
+
+}
