@@ -1,0 +1,15 @@
+package com.kh.hw2.run;
+
+import com.kh.hw2.view.EmpMenu;
+
+public class EmpTest {
+
+	public static void main(String[] args) {
+		EmpMenu em = new EmpMenu();		// 계속해서 이걸 참조해야 할 때, 생성해주고 호출. 한번에 하면 그 다음엔 참조 x
+			
+		em.mainMenu();
+
+		
+	}
+
+}
