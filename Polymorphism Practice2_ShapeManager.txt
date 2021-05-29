@@ -1,0 +1,26 @@
+package com.kh.hw1.controller;
+
+import com.kh.hw1.model.vo.Circle;
+import com.kh.hw1.model.vo.Circle_2;
+import com.kh.hw1.model.vo.IShape;
+import com.kh.hw1.model.vo.Rectangle_2;
+
+public class ShapeManager_2 {
+	public void calcShape(){
+		IShape[] iArr = new IShape[2];
+		iArr[0] = new Rectangle_2(34.5, 42.7);
+		iArr[1] = new Circle_2(15.5);
+		
+		for(IShape i : iArr) {
+			if(i instanceof Rectangle_2) {
+				System.out.println("Rectangle 면적 : " + i.area());
+				System.out.println("Rectangle 둘레 : " + i.perimeter());				
+			} else if(i instanceof Circle_2) {
+				System.out.println("Circle 면적 : " + i.area());
+				System.out.println("Circle 둘레 : " + i.perimeter());
+			}
+		}
+	
+	
+	}
+}

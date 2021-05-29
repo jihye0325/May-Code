@@ -1,0 +1,8 @@
+package com.kh.hw1.model.vo;
+
+public interface IShape {
+
+	public double area();
+	public double perimeter();
+	
+}
