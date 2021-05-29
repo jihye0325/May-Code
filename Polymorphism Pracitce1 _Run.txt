@@ -1,0 +1,13 @@
+package com.kh.hw1.run;
+
+import com.kh.hw1.controller.ShapeManager;
+
+public class Run_1 {
+
+	public static void main(String[] args) {
+		ShapeManager sm = new ShapeManager();
+		sm.calShape();
+
+	}
+
+}
