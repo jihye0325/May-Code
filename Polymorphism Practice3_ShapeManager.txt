@@ -1,0 +1,53 @@
+package com.kh.hw1.controller;
+
+import com.kh.hw1.model.vo.Circle;
+import com.kh.hw1.model.vo.Circle;
+import com.kh.hw1.model.vo.IShape;
+import com.kh.hw1.model.vo.Rectangle;
+import com.kh.hw1.model.vo.Triangle;
+
+public class ShapeManager {
+	public void calcShape(){
+		IShape[] iArr = new IShape[2];
+		iArr[0] = new Rectangle(34.5, 42.7);
+		iArr[1] = new Circle(15.5);
+		
+		for(IShape i : iArr) {
+			if(i instanceof Rectangle) {
+				System.out.println("Rectangle 면적 : " + i.area());
+				System.out.println("Rectangle 둘레 : " + i.perimeter());				
+			} else if(i instanceof Circle) {
+				System.out.println("Circle 면적 : " + i.area());
+				System.out.println("Circle 둘레 : " + i.perimeter());
+			}
+		}
+	}
+	
+	public void calcShapeArray() {
+		IShape[] iarr = new IShape[5];
+		iarr[0] = new Circle(10);
+		iarr[1] = new Rectangle(5.5, 8.5);
+		iarr[2] = new Triangle(4, 6);
+		iarr[3] = new Circle(8.6);
+		iarr[4] = new Triangle(12, 12);
+		
+		for(IShape ia : iarr) {
+			if(ia instanceof Rectangle) {
+				System.out.println("Rectangle - 면적 : " + ia.area() + ", 둘레 : " + ia.perimeter());			
+			} else if(ia instanceof Circle) {
+				System.out.println("Circle - 면적 : " + ia.area() + ", 둘레 : " + ia.perimeter());	
+			} else if(ia instanceof Triangle) {
+				System.out.println("Triangle - 면적 : " + ia.area() + ", 둘레 : " + ia.perimeter() + ", 빗변 : " + ((Triangle)ia).hypotenuse());	
+			}
+			
+			
+		}
+		
+		
+		
+	}
+	
+	
+}
+
+
