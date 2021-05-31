@@ -1,0 +1,23 @@
+package com.kh.hw2.controller;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class SpaceUpper {
+
+	public SpaceUpper() {}
+	
+	public void spaceToUpper() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("영어를 입력하시오(띄어쓰기 포함): ");
+		String str = sc.nextLine();
+		
+		StringTokenizer st = new StringTokenizer(str, " ");
+		StringBuilder sb = new StringBuilder();
+		
+		while(st.hasMoreTokens()) {
+			String s = st.nextToken();
+			sb.append(s.toUpperCase().charAt(0) + s.substring(1)).append(" ");
+		} System.out.println(sb.toString());
+	}
+}
